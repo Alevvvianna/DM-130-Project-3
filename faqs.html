@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Rescues - FAQs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Wild Rescues</h1>
+    <h3>Helping Wildlife Thrive</h3>
+    <div class="hamburger" onclick="menuToggle()">&#9776;</div>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Frequently Asked Questions</h2>
+    <div id="questions">
+        <p onclick="toggleAnswer('a1')">Q1: How can I volunteer?</p>
+        <h2 id="a1">You can sign up through our contact form or email us directly.</h2>
+
+        <p onclick="toggleAnswer('a2')">Q2: What animals do you rescue?</p>
+        <h2 id="a2">We rescue all kinds of wild animals, from birds to mammals.</h2>
+
+        <p onclick="toggleAnswer('a3')">Q3: Can I donate?</p>
+        <h2 id="a3">Yes! Donations help us provide food and medical care for the animals.</h2>
+
+        <p onclick="toggleAnswer('a4')">Q4: Where are you located?</p>
+        <h2 id="a4">We are located in your local community (city and state).</h2>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Wild Rescues</p>
+    <a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a>
+</footer>
+
+</body>
+</html>
