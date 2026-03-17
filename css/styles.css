@@ -1,3 +1,5 @@
+/* Alexandra, March 13, 2026 */
+
 /* Reset */
 * {
     margin: 0;
@@ -8,8 +10,22 @@
 /* Corpo e fontes */
 body {
     font-family: 'Verdana', sans-serif;
-    background-color: #e0f7fa; /* azul bebê fosco */
+    background-color: #e0f7fa;
     color: #004d40;
+}
+
+/* Skip Link */
+.skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #004d40;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+.skip:focus {
+    top: 0;
 }
 
 /* Header e nav */
@@ -71,10 +87,26 @@ img, video {
 /* Footer */
 footer {
     background-color: #00acc1;
-    text-align: center;
-    color: white;
     padding: 1rem;
     margin-top: 2rem;
+    overflow: auto;
+}
+
+footer .copyright {
+    float: left;
+    width: 65%;
+}
+
+footer .social {
+    float: right;
+    width: 25%;
+    text-align: center;
+}
+
+footer .social img {
+    width: 32px;
+    height: 32px;
+    margin: 0 4px;
 }
 
 /* Form */
@@ -96,11 +128,13 @@ input, textarea {
 }
 
 /* FAQ */
-#answer h2 {
-    display: none;
+.faq h3 {
     font-weight: bold;
-    text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+}
+
+.faq p {
+    margin-top: 0.25rem;
 }
 
 /* Responsividade */
@@ -122,5 +156,25 @@ input, textarea {
 
     .hamburger {
         display: block;
+    }
+
+    footer .social img {
+        display: inline-block;
+        padding: 4%;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    footer {
+        overflow: auto;
+    }
+    footer .copyright {
+        float: left;
+        width: 65%;
+    }
+    footer .social {
+        float: right;
+        width: 25%;
     }
 }
